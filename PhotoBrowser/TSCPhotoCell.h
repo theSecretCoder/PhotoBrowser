@@ -10,4 +10,6 @@
 
 @interface TSCPhotoCell : UICollectionViewCell
 
+@property (nonatomic) UIImageView *imageView;
+
 @end

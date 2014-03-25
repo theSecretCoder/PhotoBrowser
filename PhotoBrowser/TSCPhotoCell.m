@@ -15,10 +15,16 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
+        self.imageView = [[UIImageView alloc] init];
+        [self.contentView addSubview:self.imageView];
     }
     return self;
 }
 
+- (void)layoutSubviews
+{
+    self.imageView.frame = self.contentView.bounds;
+}
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.

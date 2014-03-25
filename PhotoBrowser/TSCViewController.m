@@ -7,6 +7,7 @@
 //
 
 #import "TSCViewController.h"
+#import "TSCPhotoCell.h"
 
 @interface TSCViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
@@ -24,6 +25,18 @@
     self.collectionView.dataSource = self;
     
     layout.itemSize = CGSizeMake(100, 100);
+    
+    NSURLSession *session = [NSURLSession sharedSession];
+    NSURL *url = [[NSURL alloc] initWithString:@""];
+    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
+    
+    NSURLSessionDownloadTask *task = [session downloadTaskWithRequest:request
+                                                    completionHandler:^(NSURL *location, NSURLResponse *response, NSError *error) {
+                                                        NSString *text = [[NSString alloc] initWithContentsOfURL:location encoding:NSUTF8StringEncoding error:&error];
+                                                        NSLog(@"%@", text);
+                                                        NSLog(@"%@", response);
+                                                    }];
+    [task resume];
 }
 
 - (void)didReceiveMemoryWarning
@@ -40,7 +53,7 @@
 // The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"PhotoCell" forIndexPath:indexPath];
+    TSCPhotoCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"PhotoCell" forIndexPath:indexPath];
     cell.backgroundColor = [UIColor blueColor];
     return cell;
 }
