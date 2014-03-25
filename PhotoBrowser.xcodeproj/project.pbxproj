@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		42077EB918E122B3000D2402 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42077EB818E122B3000D2402 /* Foundation.framework */; };
+		42077EBB18E122B3000D2402 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42077EBA18E122B3000D2402 /* CoreGraphics.framework */; };
+		42077EBD18E122B3000D2402 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42077EBC18E122B3000D2402 /* UIKit.framework */; };
+		42077EC318E122B3000D2402 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42077EC118E122B3000D2402 /* InfoPlist.strings */; };
+		42077EC518E122B3000D2402 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42077EC418E122B3000D2402 /* main.m */; };
+		42077EC918E122B3000D2402 /* TSCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42077EC818E122B3000D2402 /* TSCAppDelegate.m */; };
+		42077ECC18E122B3000D2402 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42077ECA18E122B3000D2402 /* Main.storyboard */; };
+		42077ECF18E122B3000D2402 /* TSCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42077ECE18E122B3000D2402 /* TSCViewController.m */; };
+		42077ED118E122B3000D2402 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42077ED018E122B3000D2402 /* Images.xcassets */; };
+		42077ED818E122B4000D2402 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42077ED718E122B4000D2402 /* XCTest.framework */; };
+		42077ED918E122B4000D2402 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42077EB818E122B3000D2402 /* Foundation.framework */; };
+		42077EDA18E122B4000D2402 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42077EBC18E122B3000D2402 /* UIKit.framework */; };
+		42077EE218E122B4000D2402 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42077EE018E122B4000D2402 /* InfoPlist.strings */; };
+		42077EE418E122B4000D2402 /* PhotoBrowserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42077EE318E122B4000D2402 /* PhotoBrowserTests.m */; };
+		42077EEF18E1287D000D2402 /* TSCPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 42077EEE18E1287D000D2402 /* TSCPhotoCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		42077EDB18E122B4000D2402 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42077EAD18E122B3000D2402 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42077EB418E122B3000D2402;
+			remoteInfo = PhotoBrowser;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		42077EB518E122B3000D2402 /* PhotoBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		42077EB818E122B3000D2402 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		42077EBA18E122B3000D2402 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		42077EBC18E122B3000D2402 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		42077EC018E122B3000D2402 /* PhotoBrowser-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PhotoBrowser-Info.plist"; sourceTree = "<group>"; };
+		42077EC218E122B3000D2402 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		42077EC418E122B3000D2402 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		42077EC618E122B3000D2402 /* PhotoBrowser-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PhotoBrowser-Prefix.pch"; sourceTree = "<group>"; };
+		42077EC718E122B3000D2402 /* TSCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSCAppDelegate.h; sourceTree = "<group>"; };
+		42077EC818E122B3000D2402 /* TSCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSCAppDelegate.m; sourceTree = "<group>"; };
+		42077ECB18E122B3000D2402 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		42077ECD18E122B3000D2402 /* TSCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSCViewController.h; sourceTree = "<group>"; };
+		42077ECE18E122B3000D2402 /* TSCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSCViewController.m; sourceTree = "<group>"; };
+		42077ED018E122B3000D2402 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		42077ED618E122B4000D2402 /* PhotoBrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoBrowserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		42077ED718E122B4000D2402 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		42077EDF18E122B4000D2402 /* PhotoBrowserTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PhotoBrowserTests-Info.plist"; sourceTree = "<group>"; };
+		42077EE118E122B4000D2402 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		42077EE318E122B4000D2402 /* PhotoBrowserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoBrowserTests.m; sourceTree = "<group>"; };
+		42077EED18E1287D000D2402 /* TSCPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSCPhotoCell.h; sourceTree = "<group>"; };
+		42077EEE18E1287D000D2402 /* TSCPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSCPhotoCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42077EB218E122B3000D2402 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42077EBB18E122B3000D2402 /* CoreGraphics.framework in Frameworks */,
+				42077EBD18E122B3000D2402 /* UIKit.framework in Frameworks */,
+				42077EB918E122B3000D2402 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42077ED318E122B4000D2402 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42077ED818E122B4000D2402 /* XCTest.framework in Frameworks */,
+				42077EDA18E122B4000D2402 /* UIKit.framework in Frameworks */,
+				42077ED918E122B4000D2402 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		42077EAC18E122B3000D2402 = {
+			isa = PBXGroup;
+			children = (
+				42077EBE18E122B3000D2402 /* PhotoBrowser */,
+				42077EDD18E122B4000D2402 /* PhotoBrowserTests */,
+				42077EB718E122B3000D2402 /* Frameworks */,
+				42077EB618E122B3000D2402 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		42077EB618E122B3000D2402 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42077EB518E122B3000D2402 /* PhotoBrowser.app */,
+				42077ED618E122B4000D2402 /* PhotoBrowserTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42077EB718E122B3000D2402 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42077EB818E122B3000D2402 /* Foundation.framework */,
+				42077EBA18E122B3000D2402 /* CoreGraphics.framework */,
+				42077EBC18E122B3000D2402 /* UIKit.framework */,
+				42077ED718E122B4000D2402 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		42077EBE18E122B3000D2402 /* PhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				42077EC718E122B3000D2402 /* TSCAppDelegate.h */,
+				42077EC818E122B3000D2402 /* TSCAppDelegate.m */,
+				42077ECA18E122B3000D2402 /* Main.storyboard */,
+				42077ECD18E122B3000D2402 /* TSCViewController.h */,
+				42077ECE18E122B3000D2402 /* TSCViewController.m */,
+				42077ED018E122B3000D2402 /* Images.xcassets */,
+				42077EED18E1287D000D2402 /* TSCPhotoCell.h */,
+				42077EEE18E1287D000D2402 /* TSCPhotoCell.m */,
+				42077EBF18E122B3000D2402 /* Supporting Files */,
+			);
+			path = PhotoBrowser;
+			sourceTree = "<group>";
+		};
+		42077EBF18E122B3000D2402 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				42077EC018E122B3000D2402 /* PhotoBrowser-Info.plist */,
+				42077EC118E122B3000D2402 /* InfoPlist.strings */,
+				42077EC418E122B3000D2402 /* main.m */,
+				42077EC618E122B3000D2402 /* PhotoBrowser-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		42077EDD18E122B4000D2402 /* PhotoBrowserTests */ = {
+			isa = PBXGroup;
+			children = (
+				42077EE318E122B4000D2402 /* PhotoBrowserTests.m */,
+				42077EDE18E122B4000D2402 /* Supporting Files */,
+			);
+			path = PhotoBrowserTests;
+			sourceTree = "<group>";
+		};
+		42077EDE18E122B4000D2402 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				42077EDF18E122B4000D2402 /* PhotoBrowserTests-Info.plist */,
+				42077EE018E122B4000D2402 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42077EB418E122B3000D2402 /* PhotoBrowser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42077EE718E122B4000D2402 /* Build configuration list for PBXNativeTarget "PhotoBrowser" */;
+			buildPhases = (
+				42077EB118E122B3000D2402 /* Sources */,
+				42077EB218E122B3000D2402 /* Frameworks */,
+				42077EB318E122B3000D2402 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhotoBrowser;
+			productName = PhotoBrowser;
+			productReference = 42077EB518E122B3000D2402 /* PhotoBrowser.app */;
+			productType = "com.apple.product-type.application";
+		};
+		42077ED518E122B4000D2402 /* PhotoBrowserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42077EEA18E122B4000D2402 /* Build configuration list for PBXNativeTarget "PhotoBrowserTests" */;
+			buildPhases = (
+				42077ED218E122B4000D2402 /* Sources */,
+				42077ED318E122B4000D2402 /* Frameworks */,
+				42077ED418E122B4000D2402 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42077EDC18E122B4000D2402 /* PBXTargetDependency */,
+			);
+			name = PhotoBrowserTests;
+			productName = PhotoBrowserTests;
+			productReference = 42077ED618E122B4000D2402 /* PhotoBrowserTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		42077EAD18E122B3000D2402 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TSC;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = theSecretCoders;
+				TargetAttributes = {
+					42077ED518E122B4000D2402 = {
+						TestTargetID = 42077EB418E122B3000D2402;
+					};
+				};
+			};
+			buildConfigurationList = 42077EB018E122B3000D2402 /* Build configuration list for PBXProject "PhotoBrowser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 42077EAC18E122B3000D2402;
+			productRefGroup = 42077EB618E122B3000D2402 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42077EB418E122B3000D2402 /* PhotoBrowser */,
+				42077ED518E122B4000D2402 /* PhotoBrowserTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		42077EB318E122B3000D2402 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42077ED118E122B3000D2402 /* Images.xcassets in Resources */,
+				42077EC318E122B3000D2402 /* InfoPlist.strings in Resources */,
+				42077ECC18E122B3000D2402 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42077ED418E122B4000D2402 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42077EE218E122B4000D2402 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42077EB118E122B3000D2402 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42077ECF18E122B3000D2402 /* TSCViewController.m in Sources */,
+				42077EEF18E1287D000D2402 /* TSCPhotoCell.m in Sources */,
+				42077EC518E122B3000D2402 /* main.m in Sources */,
+				42077EC918E122B3000D2402 /* TSCAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42077ED218E122B4000D2402 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42077EE418E122B4000D2402 /* PhotoBrowserTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		42077EDC18E122B4000D2402 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42077EB418E122B3000D2402 /* PhotoBrowser */;
+			targetProxy = 42077EDB18E122B4000D2402 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		42077EC118E122B3000D2402 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42077EC218E122B3000D2402 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		42077ECA18E122B3000D2402 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42077ECB18E122B3000D2402 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		42077EE018E122B4000D2402 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42077EE118E122B4000D2402 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		42077EE518E122B4000D2402 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		42077EE618E122B4000D2402 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		42077EE818E122B4000D2402 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhotoBrowser/PhotoBrowser-Prefix.pch";
+				INFOPLIST_FILE = "PhotoBrowser/PhotoBrowser-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		42077EE918E122B4000D2402 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhotoBrowser/PhotoBrowser-Prefix.pch";
+				INFOPLIST_FILE = "PhotoBrowser/PhotoBrowser-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		42077EEB18E122B4000D2402 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PhotoBrowser.app/PhotoBrowser";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhotoBrowser/PhotoBrowser-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PhotoBrowserTests/PhotoBrowserTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		42077EEC18E122B4000D2402 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PhotoBrowser.app/PhotoBrowser";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhotoBrowser/PhotoBrowser-Prefix.pch";
+				INFOPLIST_FILE = "PhotoBrowserTests/PhotoBrowserTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		42077EB018E122B3000D2402 /* Build configuration list for PBXProject "PhotoBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42077EE518E122B4000D2402 /* Debug */,
+				42077EE618E122B4000D2402 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42077EE718E122B4000D2402 /* Build configuration list for PBXNativeTarget "PhotoBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42077EE818E122B4000D2402 /* Debug */,
+				42077EE918E122B4000D2402 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		42077EEA18E122B4000D2402 /* Build configuration list for PBXNativeTarget "PhotoBrowserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42077EEB18E122B4000D2402 /* Debug */,
+				42077EEC18E122B4000D2402 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 42077EAD18E122B3000D2402 /* Project object */;
+}
